@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">My Suite </th></tr>
+<tr><th colspan="7">suiteA</th></tr>
+<tr><td><a href="#t0">LoginTest</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">1,513</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">My Suite </th></tr></tbody><tbody><tr><th colspan="4">suiteA</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.hybrid.suitea.LoginTest</td><td><a href="#m0">quit</a></td><td rowspan="1">1533993246885</td><td rowspan="1">352</td></tr><tr><th colspan="4">LoginTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">com.qtpselenium.hybrid.suitea.LoginTest</td><td><a href="#m1">initTest</a></td><td rowspan="2">1533993247237</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m2">initTest</a></td></tr><tr class="skippedeven"><td><a href="#m3">quit</a></td><td rowspan="2">1533993247239</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m4">quit</a></td></tr><tr><th colspan="4">LoginTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.qtpselenium.hybrid.suitea.LoginTest</td><td><a href="#m5">loginTest</a></td><td rowspan="3">1533993246868</td><td rowspan="3">16</td></tr><tr class="skippedeven"><td><a href="#m6">loginTest</a></td></tr><tr class="skippedeven"><td><a href="#m7">loginTest</a></td></tr></tbody>
+</table>
+<h2>LoginTest</h2><h3 id="m0">com.qtpselenium.hybrid.suitea.LoginTest#quit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/bson/types/ObjectId
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902)
+	at java.lang.Class.getMethods(Class.java:1615)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:736)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:729)
+	at freemarker.ext.beans.ClassIntrospector.createClassIntrospectionData(ClassIntrospector.java:281)
+	at freemarker.ext.beans.ClassIntrospector.get(ClassIntrospector.java:257)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:110)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:101)
+	at freemarker.ext.beans.StringModel.&lt;init&gt;(StringModel.java:52)
+	at freemarker.ext.beans.StringModel$1.create(StringModel.java:38)
+	at freemarker.ext.beans.BeansModelCache.create(BeansModelCache.java:72)
+	at freemarker.ext.util.ModelCache.getInstance(ModelCache.java:80)
+	at freemarker.ext.beans.BeansWrapper.wrap(BeansWrapper.java:912)
+	at freemarker.template.DefaultObjectWrapper.handleUnknownType(DefaultObjectWrapper.java:269)
+	at freemarker.template.DefaultObjectWrapper.wrap(DefaultObjectWrapper.java:248)
+	at freemarker.template.WrappingTemplateModel.wrap(WrappingTemplateModel.java:112)
+	at freemarker.template.DefaultListAdapter.get(DefaultListAdapter.java:76)
+	at freemarker.core.DynamicKeyName.dealWithNumericalKey(DynamicKeyName.java:105)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:71)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.Assignment.accept(Assignment.java:134)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:142)
+	at com.aventstack.extentreports.Report$$Lambda$15/1132307065.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at com.qtpselenium.hybrid.base.BaseTest.quit(BaseTest.java:72)
+Caused by: java.lang.ClassNotFoundException: org.bson.types.ObjectId
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 63 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qtpselenium.hybrid.suitea.LoginTest#initTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qtpselenium.hybrid.suitea.LoginTest#initTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qtpselenium.hybrid.suitea.LoginTest#quit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qtpselenium.hybrid.suitea.LoginTest#quit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qtpselenium.hybrid.suitea.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=mngr145880, ExpectedResult=LoginSuccess, Password=vumebah, Runmode=N, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode is set to NO 
+	at com.qtpselenium.hybrid.suitea.LoginTest.loginTest(LoginTest.java:24)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qtpselenium.hybrid.suitea.LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/bson/types/ObjectId
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902)
+	at java.lang.Class.getMethods(Class.java:1615)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:736)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:729)
+	at freemarker.ext.beans.ClassIntrospector.createClassIntrospectionData(ClassIntrospector.java:281)
+	at freemarker.ext.beans.ClassIntrospector.get(ClassIntrospector.java:257)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:110)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:101)
+	at freemarker.ext.beans.StringModel.&lt;init&gt;(StringModel.java:52)
+	at freemarker.ext.beans.StringModel$1.create(StringModel.java:38)
+	at freemarker.ext.beans.BeansModelCache.create(BeansModelCache.java:72)
+	at freemarker.ext.util.ModelCache.getInstance(ModelCache.java:80)
+	at freemarker.ext.beans.BeansWrapper.wrap(BeansWrapper.java:912)
+	at freemarker.template.DefaultObjectWrapper.handleUnknownType(DefaultObjectWrapper.java:269)
+	at freemarker.template.DefaultObjectWrapper.wrap(DefaultObjectWrapper.java:248)
+	at freemarker.template.WrappingTemplateModel.wrap(WrappingTemplateModel.java:112)
+	at freemarker.template.DefaultListAdapter.get(DefaultListAdapter.java:76)
+	at freemarker.core.DynamicKeyName.dealWithNumericalKey(DynamicKeyName.java:105)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:71)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.Assignment.accept(Assignment.java:134)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:142)
+	at com.aventstack.extentreports.Report$$Lambda$15/1132307065.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at com.qtpselenium.hybrid.base.BaseTest.quit(BaseTest.java:72)
+Caused by: java.lang.ClassNotFoundException: org.bson.types.ObjectId
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 63 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qtpselenium.hybrid.suitea.LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/bson/types/ObjectId
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902)
+	at java.lang.Class.getMethods(Class.java:1615)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:736)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:729)
+	at freemarker.ext.beans.ClassIntrospector.createClassIntrospectionData(ClassIntrospector.java:281)
+	at freemarker.ext.beans.ClassIntrospector.get(ClassIntrospector.java:257)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:110)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:101)
+	at freemarker.ext.beans.StringModel.&lt;init&gt;(StringModel.java:52)
+	at freemarker.ext.beans.StringModel$1.create(StringModel.java:38)
+	at freemarker.ext.beans.BeansModelCache.create(BeansModelCache.java:72)
+	at freemarker.ext.util.ModelCache.getInstance(ModelCache.java:80)
+	at freemarker.ext.beans.BeansWrapper.wrap(BeansWrapper.java:912)
+	at freemarker.template.DefaultObjectWrapper.handleUnknownType(DefaultObjectWrapper.java:269)
+	at freemarker.template.DefaultObjectWrapper.wrap(DefaultObjectWrapper.java:248)
+	at freemarker.template.WrappingTemplateModel.wrap(WrappingTemplateModel.java:112)
+	at freemarker.template.DefaultListAdapter.get(DefaultListAdapter.java:76)
+	at freemarker.core.DynamicKeyName.dealWithNumericalKey(DynamicKeyName.java:105)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:71)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.Assignment.accept(Assignment.java:134)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:142)
+	at com.aventstack.extentreports.Report$$Lambda$15/1132307065.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at com.qtpselenium.hybrid.base.BaseTest.quit(BaseTest.java:72)
+Caused by: java.lang.ClassNotFoundException: org.bson.types.ObjectId
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 63 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

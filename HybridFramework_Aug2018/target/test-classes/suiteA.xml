@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suiteA" >
+	
+		<test name="LoginTest" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.hybrid.suitea.LoginTest" />
+		</classes>
+	</test>
+	
+	<!--
+	<test name="Test B" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.hybrid.suitea.TestB" />
+		</classes>
+	</test>
+	-->
+	
+</suite>

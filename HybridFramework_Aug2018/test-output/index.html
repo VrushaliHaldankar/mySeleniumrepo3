@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suiteA">
+              <span class="suite-name border-skipped">suiteA</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suiteA">
+                    <span>E:\selenium_practice\Maven_Workspace\HybridFramework_Aug2018\src\test\resources\suiteA.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suiteA">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suiteA">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suiteA">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suiteA">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suiteA">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suiteA">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-suiteA" class="hide-methods skipped suite-suiteA"> (hide)</a> <!-- hide-methods skipped suite-suiteA -->
+                      <a href="#" panel-name="suite-suiteA" class="show-methods skipped suite-suiteA"> (show)</a> <!-- show-methods skipped suite-suiteA -->
+                    </span>
+                    <div class="method-list-content skipped suite-suiteA">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suiteA" title="com.qtpselenium.hybrid.suitea.LoginTest" hash-for-method="loginTest({Username=mngr145880, ExpectedResult=LoginSuccess, Password=vumebah, Runmode=N, Browser=Mozilla})">loginTest({Username=mngr145880, ExpectedResult=LoginSuccess, Password=vumebah, Runmode=N, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suiteA" title="com.qtpselenium.hybrid.suitea.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suiteA" title="com.qtpselenium.hybrid.suitea.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-suiteA -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_Suite_" class="panel My_Suite_">
+        </div> <!-- panel My_Suite_ -->
+        <div panel-name="suite-suiteA" class="panel suiteA">
+          <div class="suite-suiteA-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.hybrid.suitea.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({Username=mngr145880, ExpectedResult=LoginSuccess, Password=vumebah, Runmode=N, Browser=Mozilla})">
+                  </a> <!-- loginTest({Username=mngr145880, ExpectedResult=LoginSuccess, Password=vumebah, Runmode=N, Browser=Mozilla}) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({Username=mngr145880, ExpectedResult=LoginSuccess, Password=vumebah, Runmode=N, Browser=Mozilla})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO 
+	at com.qtpselenium.hybrid.suitea.LoginTest.loginTest(LoginTest.java:24)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/bson/types/ObjectId
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902)
+	at java.lang.Class.getMethods(Class.java:1615)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:736)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:729)
+	at freemarker.ext.beans.ClassIntrospector.createClassIntrospectionData(ClassIntrospector.java:281)
+	at freemarker.ext.beans.ClassIntrospector.get(ClassIntrospector.java:257)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:110)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:101)
+	at freemarker.ext.beans.StringModel.&lt;init&gt;(StringModel.java:52)
+	at freemarker.ext.beans.StringModel$1.create(StringModel.java:38)
+	at freemarker.ext.beans.BeansModelCache.create(BeansModelCache.java:72)
+	at freemarker.ext.util.ModelCache.getInstance(ModelCache.java:80)
+	at freemarker.ext.beans.BeansWrapper.wrap(BeansWrapper.java:912)
+	at freemarker.template.DefaultObjectWrapper.handleUnknownType(DefaultObjectWrapper.java:269)
+	at freemarker.template.DefaultObjectWrapper.wrap(DefaultObjectWrapper.java:248)
+	at freemarker.template.WrappingTemplateModel.wrap(WrappingTemplateModel.java:112)
+	at freemarker.template.DefaultListAdapter.get(DefaultListAdapter.java:76)
+	at freemarker.core.DynamicKeyName.dealWithNumericalKey(DynamicKeyName.java:105)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:71)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.Assignment.accept(Assignment.java:134)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:142)
+	at com.aventstack.extentreports.Report$$Lambda$15/1132307065.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at com.qtpselenium.hybrid.base.BaseTest.quit(BaseTest.java:72)
+Caused by: java.lang.ClassNotFoundException: org.bson.types.ObjectId
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 63 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/bson/types/ObjectId
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902)
+	at java.lang.Class.getMethods(Class.java:1615)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:736)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:729)
+	at freemarker.ext.beans.ClassIntrospector.createClassIntrospectionData(ClassIntrospector.java:281)
+	at freemarker.ext.beans.ClassIntrospector.get(ClassIntrospector.java:257)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:110)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:101)
+	at freemarker.ext.beans.StringModel.&lt;init&gt;(StringModel.java:52)
+	at freemarker.ext.beans.StringModel$1.create(StringModel.java:38)
+	at freemarker.ext.beans.BeansModelCache.create(BeansModelCache.java:72)
+	at freemarker.ext.util.ModelCache.getInstance(ModelCache.java:80)
+	at freemarker.ext.beans.BeansWrapper.wrap(BeansWrapper.java:912)
+	at freemarker.template.DefaultObjectWrapper.handleUnknownType(DefaultObjectWrapper.java:269)
+	at freemarker.template.DefaultObjectWrapper.wrap(DefaultObjectWrapper.java:248)
+	at freemarker.template.WrappingTemplateModel.wrap(WrappingTemplateModel.java:112)
+	at freemarker.template.DefaultListAdapter.get(DefaultListAdapter.java:76)
+	at freemarker.core.DynamicKeyName.dealWithNumericalKey(DynamicKeyName.java:105)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:71)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.Assignment.accept(Assignment.java:134)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:142)
+	at com.aventstack.extentreports.Report$$Lambda$15/1132307065.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at com.qtpselenium.hybrid.base.BaseTest.quit(BaseTest.java:72)
+Caused by: java.lang.ClassNotFoundException: org.bson.types.ObjectId
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 63 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suiteA-class-skipped -->
+        </div> <!-- panel suiteA -->
+        <div panel-name="test-xml-My_Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\selenium_practice\Maven_Workspace\HybridFramework_Aug2018\src\test\resources\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;My Suite &quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./src/test/resources/suiteA.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- My Suite  --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-suiteA" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\selenium_practice\Maven_Workspace\HybridFramework_Aug2018\src\test\resources\suiteA.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;suiteA&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.hybrid.suitea.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+&lt;/suite&gt; &lt;!-- suiteA --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My Suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suiteA" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suiteA</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My Suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suiteA" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suiteA</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My Suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_Suite_');
+function tableData_My_Suite_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['My_Suite_']= { tableData: data, tableDiv: 'times-div-My_Suite_'}
+return data;
+}
+              </script>
+              <div id="times-div-My_Suite_">
+              </div> <!-- times-div-My_Suite_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suiteA" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suiteA</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suiteA');
+function tableData_suiteA() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.qtpselenium.hybrid.suitea.LoginTest')
+data.setCell(0, 3, 16);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.qtpselenium.hybrid.suitea.LoginTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.qtpselenium.hybrid.suitea.LoginTest')
+data.setCell(2, 3, 0);
+window.suiteTableData['suiteA']= { tableData: data, tableDiv: 'times-div-suiteA'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 ms</span>
+              <div id="times-div-suiteA">
+              </div> <!-- times-div-suiteA -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My Suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suiteA" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suiteA</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suiteA" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suiteA" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.hybrid.suitea.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=mngr145880, ExpectedResult=LoginSuccess, Password=vumebah, Runmode=N, Browser=Mozilla})</span>
+                <span class="method-start">1134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">quit</span>
+                <span class="method-start">1151 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
