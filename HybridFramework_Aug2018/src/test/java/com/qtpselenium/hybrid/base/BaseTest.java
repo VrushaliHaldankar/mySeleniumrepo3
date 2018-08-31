@@ -44,6 +44,7 @@ public class BaseTest {
 		String arr[] = this.getClass().getPackage().getName().split("\\.");
 		String suiteName= arr[arr.length-1];
 		System.out.println();
+		System.out.println();
 		xls  =new Xls_Reader(envProp.getProperty(suiteName+"_xls"));
 		
 		ds= new DriverScript();
